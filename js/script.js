@@ -59,8 +59,8 @@ const render = function () {
 todoControl.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    if (headerInput.value === '') {
-        alert('Ксюша, заполни, пожалуйста, поле с планом =)');
+    if (headerInput.value.trim() === '') {
+        alert('Ксюша, заполни, пожалуйста, поле с планом и больше меня не ломай =)');
     } else {
         const newToDo = {
             text: headerInput.value,
